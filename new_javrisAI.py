@@ -10,24 +10,6 @@ def say(text):
     speaker.speak(text)
 
 
-# def chat_with_ai(prompt):
-#     openai.api_key = "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"  # Replace with your OpenAI API key
-#     response = openai.ChatCompletion.create(
-#         model="gpt-3.5-turbo",
-#         messages=[{"role": "user", "content": prompt}]
-#     )
-#     return response["choices"][0]["message"]["content"]
-
-
-# def chat_with_ai(prompt):
-#     openai.api_key = "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"  
-#     time.sleep(1) 
-#     response = openai.ChatCompletion.create(
-#         model="gpt-3.5-turbo",
-#         messages=[{"role": "system", "content": "You are a helpful AI assistant."},
-#                   {"role": "user", "content": prompt}]
-#     )
-#     return response.choices[0].message["content"]
 
 
 # Configure Google Gemini API
@@ -92,19 +74,8 @@ if __name__ == '__main__':
             print("Thanks for using. Bye!")
             say("Thanks for using")
             break
-        
-        # if "talk to me" in text:
-        #     say("Great idea, let's talk!")
-        #     while True:
-        #         text = takeCommand()
-        #         if "stop jarvis" in text:
-        #             say("Okay, nice to talk to you. Bye!")
-        #             break
-        #         else:
-        #             response = chat_with_ai(text)  # AI-generated response
-        #             say(response)
 
-        # AI conversation mode
+        
         if "talk to me" in text:
             say("Great idea, let's talk!")
             while True:
